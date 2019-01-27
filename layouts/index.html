@@ -3,8 +3,9 @@ Hugo Bulma Starter | Home
 {{ end }}
 
 {{ define "main" }}
-{{ $title   := site.Title }}
-{{ $tagline := site.Params.tagline }}
+{{ $title    := site.Title }}
+{{ $tagline  := site.Params.tagline }}
+{{ $features := site.Data.features }}
 <section class="hero is-info">
   <div class="container">
     <div class="hero-body is-medium">
@@ -15,6 +16,26 @@ Hugo Bulma Starter | Home
       <p class="subtitle is-size-2 is-size-3-mobile">
         {{ . }}
       </p>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-multiline">
+      {{ range $features }}
+      <div class="column">
+        <p class="title is-size-3 is-size-4-mobile">
+          {{ .title }}
+        </p>
+
+        <hr />
+
+        <p>
+          {{ .description }}
+        </p>
+      </div>
       {{ end }}
     </div>
   </div>
