@@ -4,6 +4,14 @@
 
 To get started, install [Bulma](https://bulma.io) using npm or Yarn.
 
+```shell
+# For Yarn
+yarn
+
+# For npm
+npm
+```
+
 Once you've installed the Bulma assets, you can run the site locally:
 
 ```shell
