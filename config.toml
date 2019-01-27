@@ -12,6 +12,6 @@ monospaceFont = "Fira Mono"
 name = "Lato"
 sizes = [300,400,600,700]
 
-[[params.fonts]]
-name = "Fira Mono"
-sizes = [400]
+#[[params.fonts]]
+#name = "Fira Mono"
+#sizes = [400]
