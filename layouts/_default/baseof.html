@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ block "title" . }}{{ site.Title }}{{ end }}</title>
+    {{ partial "css.html" . }}
+  </head>
+  <body>
+    {{ partial "navbar.html" . }}
+
+    {{ block "main" . }}
+    {{ end }}
+  </body>
+</html>

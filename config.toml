@@ -1,0 +1,17 @@
+languageCode = "en-us"
+title = "Hugo Bulma Starter"
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[params]
+tagline = "Just showing off some of my favorite tools 😎"
+fontAwesomeVersion = "5.3.1"
+sansSerifFont = "Lato"
+monospaceFont = "Fira Mono"
+
+[[params.fonts]]
+name = "Lato"
+sizes = [300,400,600,700]
+
+[[params.fonts]]
+name = "Fira Mono"
+sizes = [400]

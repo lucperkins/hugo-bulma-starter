@@ -1,0 +1,22 @@
+{{ define "title" }}
+Hugo Bulma Starter | Home
+{{ end }}
+
+{{ define "main" }}
+{{ $title   := site.Title }}
+{{ $tagline := site.Params.tagline }}
+<section class="hero is-info">
+  <div class="container">
+    <div class="hero-body is-medium">
+      <p class="title is-size-1 is-size-2-mobile{{ if $tagline }} is-spaced{{ end }}">
+        {{ $title }}
+      </p>
+      {{ with $tagline }}
+      <p class="subtitle is-size-2 is-size-3-mobile">
+        {{ . }}
+      </p>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
